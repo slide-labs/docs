@@ -1,4 +1,4 @@
-# SLIDE TRADE - SLDT
+# SLIDE TRADE - SLDX
 
 ## Getting started
 

@@ -18,6 +18,7 @@ function TopLevelNavItem({ href, children }) {
     <li>
       <Link
         href={href}
+        target="_blank"
         className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
       >
         {children}
@@ -68,9 +69,9 @@ export const Header = forwardRef(function Header({ className }, ref) {
       <div className="flex items-center gap-5">
         <nav className="hidden md:block">
           <ul role="list" className="flex items-center gap-8">
-            <TopLevelNavItem href="/">Documentation</TopLevelNavItem>
-            <TopLevelNavItem href="/protocol">Protocol</TopLevelNavItem>
-            <TopLevelNavItem href="#">Support</TopLevelNavItem>
+            <TopLevelNavItem href="https://discord.gg/EmY8nrMYm5">
+              Discord
+            </TopLevelNavItem>
           </ul>
         </nav>
         <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />
