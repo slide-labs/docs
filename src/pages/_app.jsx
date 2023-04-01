@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {router.pathname === '/' ? (
-          <title>Slide Trade - SLDX</title>
+          <title>Slide - SLDX</title>
         ) : (
           <title>{`${pageProps.title} - Social Trade`}</title>
         )}

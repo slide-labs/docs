@@ -2,7 +2,6 @@ import { forwardRef, Fragment, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Transition } from '@headlessui/react'
-
 import { Button } from '@/components/Button'
 import { navigation } from '@/components/Navigation'
 
@@ -185,9 +184,9 @@ function DiscordIcon(props) {
   )
 }
 
-function SocialLink({ href, icon: Icon, children }) {
+function SocialLink({ href, icon: Icon, children, target }) {
   return (
-    <Link href={href} className="group">
+    <Link href={href} className="group" target={target}>
       <span className="sr-only">{children}</span>
       <Icon className="h-5 w-5 fill-zinc-700 transition group-hover:fill-zinc-900 dark:group-hover:fill-zinc-500" />
     </Link>
@@ -201,13 +200,25 @@ function SmallPrint() {
         &copy; Copyright {new Date().getFullYear()}. All rights reserved.
       </p>
       <div className="flex gap-4">
-        <SocialLink href="#" icon={TwitterIcon}>
+        <SocialLink
+          href="https://twitter.com/slidelabs"
+          target="_blank"
+          icon={TwitterIcon}
+        >
           Follow us on Twitter
         </SocialLink>
-        <SocialLink href="#" icon={GitHubIcon}>
+        <SocialLink
+          href="https://github.com/slide-labs"
+          target="_blank"
+          icon={GitHubIcon}
+        >
           Follow us on GitHub
         </SocialLink>
-        <SocialLink href="#" icon={DiscordIcon}>
+        <SocialLink
+          href="https://discord.gg/EmY8nrMYm5"
+          target="_blank"
+          icon={DiscordIcon}
+        >
           Join our Discord server
         </SocialLink>
       </div>
@@ -219,7 +230,7 @@ export function Footer() {
   let router = useRouter()
 
   return (
-    <footer className="mx-auto max-w-2xl space-y-10 pb-16 lg:max-w-5xl">
+    <footer className="relative mx-auto max-w-2xl space-y-10 pb-16 lg:max-w-5xl">
       <Feedback key={router.pathname} />
       <PageNavigation />
       <SmallPrint />

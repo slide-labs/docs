@@ -190,18 +190,20 @@ export const navigation = [
       { title: '👥 Referrals', href: '/referrals' },
     ],
   },
-  // {
-  //   title: 'Social Trade',
-  //   links: [
-  //     { title: 'User Guide', href: '/quickstart' },
-  //     { title: 'Quickstart', href: '/quickstart' },
-  //     { title: 'SDKs', href: '/sdks' },
-  //     { title: 'Authentication', href: '/authentication' },
-  //     { title: 'Errors', href: '/errors' },
-  //     { title: 'Roadmap', href: '/roadmap' },
-  //     { title: 'FAQ', href: '/faq' },
-  //   ],
-  // },
+  {
+    links: [
+      { title: '💠 DTP - Decentralized Trade Pools', href: '/what-is-dtp' },
+    ],
+  },
+  {
+    title: '📚 Documentation',
+    links: [
+      { title: 'User Guide', href: '/' },
+      { title: 'Quickstart', href: '/' },
+      { title: 'Roadmap', href: '/' },
+      { title: 'FAQ', href: '/' },
+    ],
+  },
 ]
 
 export function Navigation(props) {
