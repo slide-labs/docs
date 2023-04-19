@@ -198,10 +198,10 @@ export const navigation = [
   {
     title: '📚 Documentation',
     links: [
-      { title: 'User Guide', href: '/' },
-      { title: 'Quickstart', href: '/' },
-      { title: 'Roadmap', href: '/' },
-      { title: 'FAQ', href: '/' },
+      // { title: 'User Guide', href: '/' },
+      // { title: 'Quickstart', href: '/' },
+      // { title: 'Roadmap', href: '/' },
+      { title: 'FAQ', href: '/faq' },
     ],
   },
 ]
