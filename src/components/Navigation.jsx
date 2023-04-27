@@ -199,7 +199,7 @@ export const navigation = [
     title: '📚 Documentation',
     links: [
       // { title: 'User Guide', href: '/' },
-      // { title: 'Quickstart', href: '/' },
+      { title: 'Quickstart', href: '/quickstart' },
       // { title: 'Roadmap', href: '/' },
       { title: 'FAQ', href: '/faq' },
     ],
