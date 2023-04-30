@@ -188,6 +188,7 @@ export const navigation = [
     links: [
       { title: '👋 Introduction', href: '/' },
       { title: '👥 Referrals', href: '/referrals' },
+      { title: '💰 Tokenomics', href: '/tokenomics' },
     ],
   },
   {
