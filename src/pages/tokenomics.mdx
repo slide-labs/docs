@@ -15,16 +15,15 @@ export const description = 'Tokenomics'
 | Availability | Solana        |
 |              |               |
 
-SLDX is the native token of the SLDX platform, with a hard capped supply of 1B units, set to exhibit deflationary properties over time. SLDX is designed as a utility token that services many key functions within the network. SLDX is currently available on the following blockchains:
+SLDX is the native token of the Slide App platform, with a hard capped supply of 1B units, set to exhibit deflationary properties over time. SLDX is designed as a utility token that services many key functions within the network. SLDX is currently available on the following blockchains:
 | Blockchain | Contract|
 | ------------ | ------------- |
 | Solana | DEVNET |
 
 ## Token Functionality
 
-- Slide App
-- Poker
-- Battle area
+- Use SLDX to buy gSLDX and play games on the Slide App platform.
+- Use SLDX to battle against others.
 
 ## Distribution
 
@@ -32,8 +31,38 @@ SLDX is the native token of the SLDX platform, with a hard capped supply of 1B u
 
 | Entity               | Percentage | Amount      | Description                                                                                                                                          |
 | -------------------- | ---------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Seed Round           | 22%        | 220,000,000 | Independant Angels, Traders and VCs. Seed tokens are subjected to a linear vesting period of 6 to 12 months.                                         |
+| Seed Round           | 18%        | 180,000,000 | Independant Angels, Traders and VCs. Seed tokens are subjected to a linear vesting period of 6 to 12 months.                                         |
 | Liquidty             | 30%        | 300,000,000 | A lockout period of 3 to 6 months is typical for liquidity tokens.                                                                                   |
 | Core Team            | 18%        | 180,000,000 | Core team that financed and built the initial applications. Team tokens are subjected to a linear vesting period of 12 to 24 months.                 |
 | Community Incentives | 15%        | 150,000,000 | These tokens are subjected to a linear vesting period of 6 to 12 months, starting at the end of the public sale.                                     |
 | SLDX DAO Treasury    | 15%        | 150,000,000 | Community owned and governed treasury. These tokens are subjected to a linear vesting period of 12 to 24 months, starting at the end of public sale. |
+| Fusion Airdrop       | 4%         | 4,000,000   | A reward for whitelisted users to get tokens at a cheaper value.                                                                                     |
+
+## gSLDX
+
+gSLDX is a fictional token that can be used to play games on the Slide App platform. This token can be bought using SLDX and withdrawn to SLDX.
+
+By ficitional token is meant that this token is not listed on a blockchain.
+
+| gSLDX amount | Fixed price |
+| ------------ | ----------- |
+| 10,000       | $1          |
+
+**How are SLDX and gSLDX related?**
+
+1. **Buy gSLDX**:
+   The gSLDX amount you want to buy is calculated as following: the SLDX amount you want to pay times 10,000 times the current SLDX price in dollars.
+   ![buy-gSLDX](/images/gSLDX-formula.png)
+
+2. **Withdraw gSLDX**:
+   The SLDX amount you receive when withdrawing gSLDX is calculated as following:the amount of gSLDX you want to withdraw over 10,000 and over the current SLDX price in dollars.
+   ![withdraw-gSLDX](/images/SLDX-formula.png)
+
+**Example 1: You want to withdraw 85,500 gSLDX to SLDX.**
+
+| Utility                         | Amount |
+| ------------------------------- | ------ |
+| gSLDX to withdraw               | 85,500 |
+| current $SLDX price             | $2,50  |
+| SLDX after withdraw (formula 2) | 3,42   |
+| SLDX (in dollars)               | $8,55  |
