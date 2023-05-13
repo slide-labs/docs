@@ -6,12 +6,7 @@
     "rewrites":[
       {
         "source": "**",
-        "destination": "/[id]"
-        
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
+        "destination": "/**"
       }
     ]
   }
