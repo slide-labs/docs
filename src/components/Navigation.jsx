@@ -189,11 +189,9 @@ export const navigation = [
       { title: '👋 Introduction', href: '/' },
       { title: '👥 Referrals', href: '/referrals' },
       { title: '💰 Tokenomics', href: '/tokenomics' },
-    ],
-  },
-  {
-    links: [
       { title: '💠 DTP - Decentralized Trade Pools', href: '/what-is-dtp' },
+
+      { title: '✨ Brand Assets', href: '/brand-assets' },
     ],
   },
   {
@@ -201,6 +199,8 @@ export const navigation = [
     links: [
       // { title: 'User Guide', href: '/' },
       { title: 'Quickstart', href: '/quickstart' },
+      // { title: 'Leaderboard', href: '/leaderboard' },
+
       // { title: 'Roadmap', href: '/' },
       { title: 'FAQ', href: '/faq' },
     ],
