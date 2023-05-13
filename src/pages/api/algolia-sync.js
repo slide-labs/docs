@@ -1,5 +1,3 @@
-// pages/api/algolia-sync.js
-import { request } from '@/lib/datocms'
 import algoliasearch from 'algoliasearch/lite'
 export default async (req, res) => {
   // initializing the Algolia client with the secret keys
