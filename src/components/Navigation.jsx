@@ -188,9 +188,9 @@ export const navigation = [
     links: [
       { title: '👋 Introduction', href: '/' },
       { title: '👥 Referrals', href: '/referrals' },
+      { title: '💹 Market Price - Pyth and Drift', href: '/market-price' },
       { title: '💰 Tokenomics', href: '/tokenomics' },
       { title: '💠 DTP - Decentralized Trade Pools', href: '/what-is-dtp' },
-
       { title: '✨ Brand Assets', href: '/brand-assets' },
     ],
   },

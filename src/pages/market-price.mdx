@@ -1,0 +1,15 @@
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const description = 'Market Price - Powered By Pyth'
+
+<HeroPattern />
+
+# Market Price - Powered By Pyth + Drift Integration
+
+For our vaults and bot actions we use prices directly from pyth and drift to ensure that prices are always up to date and with as little delay as possible.
+This way we can offer our clients fast and secure entries without having a major impact on the market.
+
+## Vaults
+![Vaults](/images/vaults.png)
+
+Our owned vaults are using the pyth oracle to get the latest price for the assets we are using and then we open the position in the drift protocol.
